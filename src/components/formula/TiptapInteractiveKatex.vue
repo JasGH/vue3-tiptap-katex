@@ -7,7 +7,7 @@
         v-if="editMode && isFormulaBroken"
         icon
         color="green"
-        @click="toggleEdit"
+        @click="fixFormula"
     >
       <span
           class="mdi mdi-checkbox-multiple-marked"
