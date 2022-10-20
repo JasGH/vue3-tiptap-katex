@@ -193,18 +193,18 @@ export default {
   name: 'EditTableModal',
   components: {
     CustomModal: VueModal,
-    Sketch,
+    Sketch
   },
   props: {
     showModal: {
       type: Boolean,
       default() {
         return false
-      },
-    },
+      }
+    }
   },
   emits: [
-    'update:showDialog',
+    'update:showDialog'
   ],
   data() {
     return {
@@ -213,30 +213,30 @@ export default {
         top: {
           cellBorderWidth: '2',
           cellBorderType: 'solid',
-          color: 'rgba(114, 114, 114, 1)',
+          color: 'rgba(114, 114, 114, 1)'
         },
         right: {
           cellBorderWidth: '2',
           cellBorderType: 'solid',
-          color: 'rgba(114, 114, 114, 1)',
+          color: 'rgba(114, 114, 114, 1)'
         },
         left: {
           cellBorderWidth: '2',
           cellBorderType: 'solid',
-          color: 'rgba(114, 114, 114, 1)',
+          color: 'rgba(114, 114, 114, 1)'
         },
         bottom: {
           cellBorderWidth: '2',
           cellBorderType: 'solid',
-          color: 'rgba(114, 114, 114, 1)',
+          color: 'rgba(114, 114, 114, 1)'
         },
         background: {
-          color: 'rgba(255, 255, 255, 1)',
-        },
+          color: 'rgba(255, 255, 255, 1)'
+        }
       },
       selected: [],
       borderStyle: '',
-      checked: false,
+      checked: false
     }
   },
   computed: {
@@ -246,7 +246,7 @@ export default {
       },
       set(value) {
         this.$emit('update:showDialog', value)
-      },
+      }
     },
     getBorderStyle() {
       return (dir) => {
@@ -273,11 +273,11 @@ export default {
         //   this.currentOptions[this.selected].color = computedVal
         //   return
         // }
-      },
+      }
     },
     isSelected() {
       return (direction) => this.selected.includes(direction)
-    },
+    }
   },
   methods: {
     changeAttribute(data, field) {
@@ -308,8 +308,8 @@ export default {
       } else {
         this.selected = ['background']
       }
-    },
-  },
+    }
+  }
 }
 </script>
 

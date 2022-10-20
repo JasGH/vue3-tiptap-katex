@@ -59,7 +59,7 @@ import { NodeViewWrapper, nodeViewProps } from '@tiptap/vue-3'
 
 const FilePond = vueFilePond(
   FilePondPluginFileValidateType,
-  FilePondPluginImagePreview,
+  FilePondPluginImagePreview
 )
 
 export default {
@@ -67,19 +67,19 @@ export default {
   components: {
     NodeViewWrapper,
     FilePond,
-    VueDragResize,
+    VueDragResize
   },
   props: {
     nodeViewProps,
     node: {
       type: Object,
-      required: true,
+      required: true
     },
     updateAttributes: {
       type: Function,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 }
 </script>
 

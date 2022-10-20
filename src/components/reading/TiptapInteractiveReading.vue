@@ -26,8 +26,8 @@ export default {
   mixins: [MixinComponentReading],
   components: {
     NodeViewWrapper,
-    NodeViewContent,
-  },
+    NodeViewContent
+  }
 }
 </script>
 

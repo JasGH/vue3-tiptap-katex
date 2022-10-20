@@ -19,9 +19,9 @@ export default {
   name: 'TiptapInteractivePoem',
   components: {
     NodeViewWrapper,
-    NodeViewContent,
+    NodeViewContent
   },
-  mixins: [MixinComponentPoem],
+  mixins: [MixinComponentPoem]
 }
 </script>
 

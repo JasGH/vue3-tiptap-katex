@@ -20,10 +20,10 @@ export default {
   name: 'Mesra',
   components: {
     NodeViewWrapper,
-    NodeViewContent,
+    NodeViewContent
   },
   props: nodeViewProps,
-  mixins: [MixinComponentPoemMesra],
+  mixins: [MixinComponentPoemMesra]
 }
 </script>
 

@@ -69,7 +69,7 @@ import {
   Editor,
   EditorContent,
   BubbleMenu,
-  FloatingMenu,
+  FloatingMenu
 } from '@tiptap/vue-3'
 
 import mixinConvertToTiptap from 'vue-tiptap-katex-core/mixins/convertToTiptap'
@@ -93,30 +93,30 @@ export default {
     FloatingMenu,
     toolbar,
     SlotBubbleMenu,
-    SlotFloatingMenu,
+    SlotFloatingMenu
   },
   props: {
     uploadServer: {
       type: Object,
-      default: () => {},
+      default: () => {}
     },
     loading: {
       type: Boolean,
       required: false,
-      default: false,
+      default: false
     },
     options: {
       type: Object,
       required: false,
       default() {
         return {}
-      },
+      }
     },
     modelValue: {
       type: String,
       required: false,
-      default: '',
-    },
+      default: ''
+    }
   },
   watch: {
     modelValue(newContent) {
@@ -124,13 +124,13 @@ export default {
         return
       }
       this.setContent(newContent)
-    },
+    }
   },
   data() {
     return {
       editor: null,
       showDialog: false,
-      newModelValue: null,
+      newModelValue: null
     }
   },
   computed: {
@@ -142,11 +142,11 @@ export default {
         reading: false,
         persianKeyboard: false,
         mathliveOptions: {},
-        onResizeEnd: null,
+        onResizeEnd: null
       }
       Object.assign(options, this.options)
       return options
-    },
+    }
   },
   created() {
     this.newModelValue = this.convertToTiptap(this.modelValue)
@@ -157,21 +157,21 @@ export default {
     this.editor = new Editor({
       content: this.modelValue,
       parseOptions: {
-        preserveWhitespace: true,
+        preserveWhitespace: true
       },
       extensions: [
         Focus.configure({
           className: 'has-focus',
-          mode: 'all',
+          mode: 'all'
         }),
         StarterKit.configure({
           paragraph: {
-            HTMLAttributes: { dir: 'auto' },
-          },
+            HTMLAttributes: { dir: 'auto' }
+          }
         }),
         TextAlign.configure({
           types: ['heading', 'paragraph'],
-          defaultAlignment: '',
+          defaultAlignment: ''
         }),
         TextDirection,
         Highlight,
@@ -180,11 +180,11 @@ export default {
           resizable: true,
           HTMLAttributes: {
             class: 'tiptap-table',
-            style: 'border-collapse: collapse !important',
-          },
+            style: 'border-collapse: collapse !important'
+          }
         }),
         TableRow.extend({
-          content: 'tableCell*',
+          content: 'tableCell*'
         }),
         TableCell,
         TiptapInteractiveKatexInline,
@@ -193,7 +193,7 @@ export default {
         mesra,
         TiptapInteractiveReading,
         Shortkeys,
-        ThinSpace,
+        ThinSpace
       ],
       // triggered on every change
       onUpdate({ editor }) {
@@ -209,12 +209,12 @@ export default {
             return true
           }
           return false
-        },
-      },
+        }
+      }
     })
     this.editor.editorOptions = this.editorOptions
   },
-  beforeDestroy() {
+  beforeUnmount() {
     this.editor.destroy()
   },
   methods: {
@@ -281,8 +281,8 @@ export default {
     },
     getContent() {
       return this.editor.getHTML()
-    },
-  },
+    }
+  }
 }
 </script>
 

@@ -4,13 +4,13 @@
     data-drag-handle
   >
     <div
-        v-if="editMode && isFormulaBroken"
-        icon
-        color="green"
-        @click="fixFormula"
+      v-if="editMode && isFormulaBroken"
+      icon
+      color="green"
+      @click="fixFormula"
     >
       <span
-          class="mdi mdi-checkbox-multiple-marked"
+        class="mdi mdi-checkbox-multiple-marked"
       />
     </div>
     <div
@@ -58,9 +58,9 @@ import 'mathlive/dist/mathlive-static.css'
 
 export default {
   components: {
-    NodeViewWrapper,
+    NodeViewWrapper
   },
-  mixins: [MixinComponentFormula],
+  mixins: [MixinComponentFormula]
 }
 </script>
 
