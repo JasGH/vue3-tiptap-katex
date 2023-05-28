@@ -1,8 +1,37 @@
 {
+  "name": "vue3-tiptap-katex",
+  "version": "1.0.54",
+  "description": "tiptap editor using mathlive editor to render katex in vue 3",
+  "keywords": [
+    "vue",
+    "vue3",
+    "vue3",
+    "tiptap",
+    "katex",
+    "vue3-tiptap-katex"
+  ],
+  "contributors": [
+    {
+      "name": "Ali Esmaeeli",
+      "email": "aliesmaeeli20@gmail.com",
+      "url": "https://github.com/kerasus/vue3-tiptap-katex"
+    },
+    {
+      "name": "Mostafa Kazemi",
+      "email": "neo.kazemi168@gmail.com",
+      "url": "https://github.com/neokazemi/vue3-tiptap-katex"
+    },
+    {
+      "name": "Yasaman gonehi",
+      "email": "yasaman.gonehi@gmail.com",
+      "url": "https://github.com/JasGH/vue3-tiptap-katex"
+    }
+  ],
   "scripts": {
     "dev": "npm run server",
     "prod": "npm run build && npm run server:prod",
     "build": "vite build",
+    "lint": "eslint --fix --ext .js,.vue ./",
     "server": "node ./server",
     "server:prod": "cross-env NODE_ENV=production node ./server"
   },
@@ -16,6 +45,27 @@
     "sirv": "^2.0.3",
     "vite": "^4.3.9",
     "vite-plugin-ssr": "^0.4.130",
+    "dotenv": "^16.0.3",
     "vue": "^3.2.47"
-  }
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "8.22.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "^9.9.0"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ]
 }
