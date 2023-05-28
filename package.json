@@ -36,18 +36,40 @@
     "server:prod": "cross-env NODE_ENV=production node ./server"
   },
   "dependencies": {
+    "@ckpack/vue-color": "^1.4.1",
+    "@mdi/font": "^6.9.96",
+    "@tiptap/core": "^2.0.3",
+    "@tiptap/extension-color": "^2.0.3",
+    "@tiptap/extension-focus": "^2.0.3",
+    "@tiptap/extension-highlight": "^2.0.3",
+    "@tiptap/extension-table": "^2.0.3",
+    "@tiptap/extension-table-row": "^2.0.3",
+    "@tiptap/extension-text-align": "^2.0.3",
+    "@tiptap/extension-text-style": "^2.0.3",
+    "@tiptap/extension-underline": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3",
+    "@tiptap/vue-3": "^2.0.3",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/compiler-sfc": "^3.3.4",
     "@vue/server-renderer": "^3.3.4",
+    "a11y-dialog": "^7.5.2",
     "compression": "^1.7.4",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "filepond-plugin-file-validate-type": "^1.2.8",
+    "filepond-plugin-image-preview": "^4.6.11",
+    "katex": "^0.16.7",
+    "mathlive": "^0.86.0",
+    "prosemirror-model": "^1.19.2",
     "sirv": "^2.0.3",
+    "tiptap-text-direction-extension": "^1.0.7",
     "vite": "^4.3.9",
     "vite-plugin-ssr": "^0.4.130",
     "vue": "^3.2.47",
-    "vue-tiptap-katex-core": "^2.0.0"
+    "vue-filepond": "^7.0.3",
+    "vue-tiptap-katex-core": "file:../vue-tiptap-katex-core",
+    "vue3-drag-resize": "^2.0.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
@@ -56,7 +78,8 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-vue": "^9.9.0"
+    "eslint-plugin-vue": "^9.9.0",
+    "sass": "^1.62.1"
   },
   "browserslist": [
     "last 10 Chrome versions",
