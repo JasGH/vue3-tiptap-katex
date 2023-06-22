@@ -37,7 +37,8 @@
     "build": "vite build",
     "lint": "eslint --fix --ext .js,.vue ./",
     "preview": "vite preview",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "dependencies": {
     "@ckpack/vue-color": "^1.4.1",
@@ -56,6 +57,7 @@
     "@tiptap/vue-3": "^2.0.3",
     "a11y-dialog": "^7.5.2",
     "compression": "^1.7.4",
+    "docdash": "^2.0.1",
     "filepond-plugin-file-validate-type": "^1.2.8",
     "filepond-plugin-image-preview": "^4.6.11",
     "katex": "^0.16.7",
@@ -77,6 +79,7 @@
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.9.0",
+    "jsdoc": "^4.0.2",
     "sass": "^1.62.1",
     "vite": "^4.3.9"
   },
