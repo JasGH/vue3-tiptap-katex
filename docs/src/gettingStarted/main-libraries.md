@@ -8,6 +8,18 @@ One of the key features of Tiptap is its support for collaborative editing. This
 
 [link](https://tiptap.dev/)
 
+## [Tiptap & ProseMirror](https://prosemirror.net/)
+
+Tiptap and ProseMirror are both packages for building rich text editors for the web, with Tiptap being built on top of ProseMirror.
+
+Tiptap is a highly modular and extensible editor built with Vue.js. It provides a set of pre-built extensions and a powerful API for creating custom extensions. Tiptap uses ProseMirror as its underlying text editing engine, which allows it to leverage ProseMirror's core functionality and build upon it with custom extensions.
+
+ProseMirror is a stand-alone, framework-agnostic editor with a core set of features for editing rich text. It provides a flexible, modular architecture that allows developers to create custom editing experiences. ProseMirror's modular design allows it to be embedded in other frameworks and libraries, including Tiptap.
+
+Tiptap uses ProseMirror as its underlying text editing engine, but extends it with a set of pre-built extensions and a powerful API for creating custom extensions. This allows developers to build highly customized, performant, and flexible rich text editors on the web.
+
+[link to ProseMirror](https://prosemirror.net/)
+
 ## [Mathlive](https://cortexjs.io/mathlive/)
 
 Mathlive is a package that provides a set of tools for creating and editing mathematical expressions in web applications. It supports a wide range of mathematical notations, including LaTeX and MathML, and it allows users to manipulate expressions easily by dragging and dropping elements. The package includes an interactive editor, a customizable keyboard, and a library of mathematical symbols and functions. Its API is designed to be easy to use and can be integrated into any web application. Mathlive is a great tool for teachers, students, and anyone who needs to work with mathematical expressions on the web.
