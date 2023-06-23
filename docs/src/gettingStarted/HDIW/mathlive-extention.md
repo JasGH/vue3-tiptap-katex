@@ -1,4 +1,4 @@
-### mathlive extention
+## mathlive extention
 
 we use Mathlive as a [tiptap extention](https://tiptap.dev/guide/custom-extensions) to support LaTeX mathematical expressions and more.
 

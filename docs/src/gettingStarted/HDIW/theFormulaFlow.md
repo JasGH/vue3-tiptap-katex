@@ -1,14 +1,14 @@
-### the Formula Flow
+## the Formula Flow
 
 simple and neat, here is how your formula turns into html elements in editor:
 
-#### 1. loadMathLive
+## 1. loadMathLive
 
 when you open the formula box, you create a TiptapInteractiveKatex node in editor,
 which has its own custom functionality, when you finish typing your formula and close the mathlive box, a method called `loadMathLive()` is ran and the mathlive element (`Mathfield()`) outputs the  LaTex of your context.
 for more info, checkout the documentation of [MixinComponentFormula](....).
 
-#### 2. renderHTML
+## 2. renderHTML
 
 then the value of `katex` variable will be rendered into the html element below using `renderHTML()` method defined in our custom tiptap extention (extensionFormulaInline.mjs):
 
@@ -16,7 +16,7 @@ then the value of `katex` variable will be rendered into the html element below 
    <span data-katex="true">your formula</title>
 ```
 
-#### 4. computedKatex
+## 3. computedKatex
 
 when you are out of editMode, `v-html="computedKatex"` part makes your just-updated katex node attribute to be rendered as html elments and tags using the KaTex library's `renderToString` method:
 
@@ -33,12 +33,12 @@ computedKatex() {
         }
 ```
 
-#### 5. onUpdate({ editor }){}
+## 4. onUpdate({ editor }){}
 
 meanwhile anytime you change anything in editor, the onUpdate method is being called in which we use the html output of editor (with `editor.getHTML()` method),
 and update our model value, with the help of `convertToTiptap()` method as a normalizer.
 
-#### 6. convertToTiptap
+## 5. convertToTiptap
 
 This method is placed in the core file [convertToTiptap.mjs](....) with the path below:
 
